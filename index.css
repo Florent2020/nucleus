@@ -1,0 +1,1161 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #d5f3ff;
+}
+
+h2 {
+    color: #005081;
+}
+
+h5 {
+    color: #fff;
+}
+
+p {
+    font-size: 15px;
+    color: #4b4b4b;
+    line-height: 1.55;
+}
+
+.header {
+    background: #f0fbff;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+header ul li {
+    padding: 15px;
+}
+
+header ul li:first-child {
+    margin-right: 10px;
+}
+
+header ul li a {
+    color: #004e7e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header ul li a:active,
+header ul li a:hover {
+    color: #2da3ce;
+}
+
+.logo {
+    display: none;
+}
+
+.download_app img {
+    width: 135px;
+}
+
+.first_li {
+    display: none;
+}
+
+
+/* MENU
+------------------- */
+
+.header .menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    align-items: center;
+    height: 100px;
+}
+
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    position: relative;
+    display: none;
+}
+
+.header .menu-icon .navicon {
+    background: rgb(55, 199, 252);
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 29px;
+    bottom: 8px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: rgb(55, 199, 252);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 10px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -10px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    height: auto;
+    width: 100%;
+    margin: 37px 0px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+/* MAIN
+------------ */
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.main .main_left {
+    background: #004e7e;
+    z-index: 1;
+    background-image: url(./photos/icon1.svg);
+    background-repeat: no-repeat;
+    background-position: 67px center;
+    background-size: 94% auto;
+}
+
+.main_left .main_text {
+    margin: 110px 393px 120px 136px;
+}
+
+.main_left p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 17px;
+}
+
+.main_left a button {
+    border: 2px solid rgb(255, 241, 226);
+    padding: 18px 28px;
+    background: none;
+    color: rgb(213, 243, 255);
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main_left a button:hover {
+    border: 2px solid #a7d4f0;
+    color: #fff;
+}
+
+.main .main_right {
+    width: 29%;
+    position: relative;
+    background: linear-gradient(to top, #ebfaff, #b5eaff);
+}
+
+.main_right .play_video {
+    position: relative;
+    right: 296px;
+    top: 60px;
+    z-index: 1;
+    text-align: center;
+    width: 597px;
+}
+
+.play_video .laborator_image {
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+.play_video .play_button {
+    position: absolute;
+    right: 256px;
+    top: 173px;
+    width: 90px;
+}
+
+
+/* ILUSTRATION PART
+----------------------------- */
+
+.illustration {
+    width: 82%;
+    margin: 100px auto;
+    display: flex;
+}
+
+.illustration_text {
+    float: left;
+    width: 70%;
+    padding-right: 190px;
+}
+
+.illustration_text h2 {
+    width: 80%;
+    line-height: 1.33;
+}
+
+.illustration_text p {
+    padding-top: 40px;
+}
+
+.illustration_icon {
+    width: 29%;
+}
+
+
+/* SECTION PART
+----------------------- */
+
+section {
+    background-color: #e4f7ff;
+}
+
+.section {
+    width: 85%;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.section .sherbimi_text h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.section aside {
+    width: 33%;
+    float: left;
+    text-align: left;
+    padding: 0 25px;
+    position: relative;
+}
+
+.section .col_33 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.col_33 aside.microscop {
+    margin-left: 30px;
+}
+
+.col_33 img {
+    width: 25%;
+}
+
+.col_33 .vl {
+    border-left: 1px solid #0063a0;
+    height: 144px;
+    position: absolute;
+    margin-left: -32px;
+    top: 50px;
+}
+
+.col_33 .vr {
+    border-left: 1px solid #0063a0;
+    height: 144px;
+    position: absolute;
+    margin-left: 390px;
+    top: 50px;
+}
+
+
+/* COL_50
+------------------ */
+
+.col_50 {
+    background-color: #005081;
+    display: flex;
+    background-image: url(./photos/Icon2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 14%;
+}
+
+.col_50 h2 {
+    color: #e4f7ff;
+    font-weight: 600;
+}
+
+.col_50 .text_pyetje {
+    width: 50%;
+    float: left;
+    background-color: #0063a0;
+    z-index: 99;
+    padding: 139px 150px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+}
+
+.col_50 .square {
+    height: 40px;
+    width: 40px;
+    background-color: #0063a0;
+    transform: rotate(45deg);
+    border-top-right-radius: 10px;
+    float: right;
+    margin-right: -170px;
+    margin-top: -61px;
+}
+
+.col_50 .email_text {
+    margin: 30px 30px 30px 70px;
+    padding: 50px 115px;
+}
+
+.col_50 .email_text p {
+    color: #fff;
+    line-height: 1.8;
+}
+
+.col_50 .email_text .hl {
+    width: 65px;
+    border: 1.5px solid #e4f7ff;
+    margin: 30px 0;
+}
+
+
+/* PJESA PATOLOGJIKE 
+-------------------------- */
+
+.pjesa_patologjike {
+    width: 80%;
+    display: flex;
+    margin: 150px auto;
+    position: relative;
+}
+
+.foto_patologjike {
+    position: relative;
+}
+
+.foto_patologjike img:first-of-type {
+    position: relative;
+    bottom: 25px;
+    left: 43px;
+    z-index: 2;
+}
+
+.foto_patologjike img:last-of-type {
+    position: absolute;
+    top: 42px;
+    left: 10px;
+    z-index: 1;
+    height: 500px;
+}
+
+.text_patologjike {
+    margin-left: 111px;
+    width: 90%;
+    padding: 7px 5px 0 20px;
+}
+
+.text_patologjike h2 {
+    font-weight: 600;
+    line-height: 1.33;
+    padding-right: 55px;
+}
+
+.text_patologjike p:first-of-type {
+    margin: 30px 0;
+}
+
+
+/* METODAT LABORATORIKE
+------------------------------ */
+
+.metodat_laboratorike {
+    display: flex;
+}
+
+.metodat_laboratorike .metodat_text {
+    position: relative;
+}
+
+.metodat_text div {
+    width: 50%;
+    margin-left: 160px;
+    padding-top: 120px;
+}
+
+.metodat_text h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.metodat_text p {
+    font-size: 14px;
+    padding-right: 70px;
+}
+
+.metodat_text img {
+    position: absolute;
+    top: 0px;
+    left: 636px;
+    height: 351px;
+}
+
+.metodat_text a img:last-of-type {
+    width: 48%;
+    position: absolute;
+    left: 824px;
+}
+
+.metodat_text a button {
+    width: 536px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: #684cb5;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 815px;
+    top: 138px;
+    cursor: pointer;
+}
+
+.metodat_text a button:hover {
+    background: #5a419d;
+}
+
+.metodat_laboratorike .metodat_majtas {
+    width: 85%;
+    float: left;
+    background-color: #fff1e2;
+}
+
+.metodat_laboratorike .metodat_djathtas {
+    float: right;
+    background: linear-gradient(to right, #d0f2ff, #f7fdff);
+}
+
+.dna_mobile {
+    display: none;
+}
+
+
+/* PJESA E STAFIT
+------------------------ */
+
+.pjesa_stafit {
+    width: 80%;
+    display: flex;
+    margin: 150px auto;
+    position: relative;
+}
+
+.pjesa_stafit .text_stafit {
+    width: 100%;
+    margin-right: 70px;
+    padding: 7px 5px 0 20px;
+    margin-top: 50px;
+}
+
+.text_stafit h2 {
+    width: 60%;
+    font-weight: 600;
+    line-height: 1.33;
+    padding-right: 55px;
+}
+
+.text_stafit p {
+    margin: 40px 0;
+    padding-right: 60px;
+}
+
+.text_stafit button {
+    width: 200px;
+    height: 60px;
+    background-color: #0063a0;
+    border: none;
+    color: #d0f2ff;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.text_stafit button:hover {
+    background-color: #0990c6;
+}
+
+.foto_stafit img:first-of-type {
+    position: relative;
+    bottom: 25px;
+    left: -40px;
+    z-index: 2;
+}
+
+.foto_stafit div {
+    position: absolute;
+    border: 2px solid #fce47b;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    top: 60px;
+    right: 10px;
+    z-index: 1;
+    height: 465px;
+    width: 330px;
+}
+
+
+/* APLIKACIONET SOFTUERIKE
+-------------------------------- */
+
+.aplikacionet_softuerike {
+    width: 80%;
+    display: flex;
+    margin: 150px auto 20px;
+    position: relative;
+}
+
+.aplikacionet_softuerike .foto_softuerike {
+    width: 131%;
+    margin-right: 32px;
+}
+
+.aplikacionet_softuerike .text_softuerike {
+    width: 100%;
+}
+
+.text_softuerike h2 {
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.33;
+    padding-right: 55px;
+}
+
+.text_softuerike p {
+    margin: 40px 0;
+    padding-right: 60px;
+}
+
+.text_softuerike button {
+    width: 200px;
+    height: 60px;
+    background-color: #ccc7ff;
+    border: none;
+    color: #005990;
+    font-size: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+}
+
+.text_softuerike button:hover {
+    background-color: #a6a0ee;
+    color: #fff;
+}
+
+.foto_softuerike img {
+    position: relative;
+    bottom: 25px;
+    left: -40px;
+    z-index: 2;
+}
+
+
+/* FOOTER 
+--------------------- */
+
+footer {
+    background-color: #0063a0;
+    position: relative;
+    bottom: 40px;
+    z-index: 3;
+    padding-top: 91px;
+    height: 380px;
+}
+
+.kontakt_shtese {
+    background-color: #e4f7ff;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    padding: 65px 70px;
+    border-radius: 25px;
+    position: relative;
+    top: 63px;
+    z-index: 4;
+}
+
+.col_kontakt {
+    width: 33%;
+    padding: 20px 70px;
+}
+
+.col_kontakt h2 {
+    line-height: 1.22;
+    font-weight: 600;
+}
+
+.col_kontakt h6 {
+    font-weight: 700;
+    color: #0063a0;
+    font-size: 13px;
+}
+
+.col_kontakt h6 span {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.col_kontakt.telefon {
+    border-left: 1px solid #0063a0;
+    border-right: 1px solid #0063a0;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto 65px;
+    display: flex;
+    padding-top: 120px;
+}
+
+.footer .col-25:first-of-type {
+    width: 16%;
+    text-align: right;
+    padding-right: 5px;
+    margin-right: 21px;
+    color: #fff;
+}
+
+.footer .col-25 {
+    width: 28%;
+}
+
+.footer .col-25:last-of-type img {
+    height: 47px;
+    float: right;
+}
+
+.col-25 ul {
+    display: block;
+    margin: 0 0 0 6px;
+}
+
+.col-25 li {
+    padding: 0 25px;
+}
+
+.col-25 a {
+    font-size: 13px;
+    color: #fff;
+}
+
+.col-25 a:hover {
+    color: rgb(175, 171, 171);
+}
+
+.col-25.fillimi__ {
+    width: 31%;
+    padding-left: 80px;
+}
+
+.col-25.stafi__ {
+    width: 25%;
+    padding-left: 105px;
+}
+
+.footer_copy {
+    background-color: #005081;
+    padding: 20px 0;
+}
+
+.copy_rights {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    color: #d0f2ff;
+}
+
+.copy_rights h6 {
+    float: left;
+    width: 92%;
+    font-weight: 500;
+    padding-top: 17px;
+    font-size: 14px;
+}
+
+.copy_rights img {
+    float: right;
+    padding: 5px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 450px) {}
+
+@media only screen and (min-width: 451px) and (max-width: 850px) {}
+
+@media only screen and (max-width: 1025px) {
+    .header .menu-btn:checked~.menu {
+        display: block !important;
+    }
+    .header {
+        height: auto;
+        padding: 14px 0;
+    }
+    .header ul {
+        background: #fff;
+    }
+    .header ul li {
+        padding: 0;
+    }
+    .header li a {
+        display: block;
+        line-height: 70px;
+        border-style: none none dashed;
+        border-color: rgb(55, 199, 252);
+        border-width: 0.5px;
+        padding-left: 25px;
+    }
+    .header .menu-icon {
+        bottom: 14px;
+        display: block;
+        margin-right: 10px;
+    }
+    .header .logo {
+        display: block;
+        align-items: center;
+        position: relative;
+        top: 12px;
+        left: 25px;
+    }
+    .header .logo_menu {
+        display: none;
+    }
+    .header .first_li {
+        display: block;
+    }
+    .header ul {
+        display: none !important;
+    }
+    .header li:last-of-type {
+        position: relative;
+        bottom: 70px;
+        border: none;
+    }
+    .header .download_app {
+        position: relative;
+        top: 82px;
+    }
+    /* MAIN
+    ------------ */
+    .main {
+        display: block;
+        position: relative;
+        bottom: 110px;
+    }
+    .main .main_left {
+        background-position: -42px 175px;
+        background-size: 134%;
+    }
+    .main_left .main_text {
+        margin: 110px 0 0 25px;
+        padding-bottom: 189px;
+    }
+    .main_text h1 {
+        padding-top: 20px;
+    }
+    .main .main_right {
+        width: 100%;
+        height: 152px;
+    }
+    .main_right .play_video {
+        width: 88%;
+        top: -121px;
+        right: 0;
+        margin: 0 auto;
+    }
+    .play_video .play_button {
+        top: 75px;
+        right: 117px;
+    }
+    /* ILLUSTRATOR 
+    ----------------- */
+    .illustration {
+        display: flex;
+        position: relative;
+        margin: 0 auto 90px;
+        width: 88%;
+        overflow: hidden;
+        flex-direction: column;
+        bottom: 110px;
+    }
+    .illustration_text {
+        width: 100%;
+        position: relative;
+        padding-right: 0;
+        float: right;
+        order: 2;
+    }
+    .illustration_text h2 {
+        width: 100%;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .illustration_text p {
+        padding-top: 30px;
+    }
+    .illustration_icon {
+        float: left;
+        width: 70%;
+        margin: 30px auto;
+        position: relative;
+        order: 1;
+    }
+    /* SECTION
+    -------------------- */
+    section {
+        position: relative;
+        bottom: 110px;
+    }
+    .section {
+        width: 88%;
+    }
+    .section .col_33 {
+        flex-direction: column;
+    }
+    .section aside {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .col_33 img {
+        width: 60%;
+    }
+    .col_33 .vl {
+        border-top: 1px solid #0063a0;
+        border-left: none;
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+        top: 80px;
+    }
+    .col_33 aside.microscop {
+        margin-left: 0;
+    }
+    .col_33 .vr {
+        border-left: none;
+        border-bottom: 1.5px solid #0063a0;
+        height: 20px;
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+    /* COL_50
+    ----------------- */
+    .col_50 {
+        display: block;
+        text-align: center;
+        position: relative;
+        bottom: 110px;
+    }
+    .col_50 .text_pyetje {
+        width: 100%;
+        padding: 75px 35px;
+        border-top-right-radius: 0;
+        float: none;
+        border-bottom-left-radius: 40px;
+    }
+    .col_50 .text_pyetje h2 {
+        font-size: 27px;
+    }
+    .col_50 .square {
+        margin-right: 0;
+        margin-top: 0;
+        position: absolute;
+        right: 154px;
+        top: 250px;
+        transform: rotate(135deg);
+    }
+    .col_50 .email_text {
+        margin: 20px;
+        padding: 70px 20px;
+    }
+    .col_50 .email_text .hl {
+        margin: 45px auto;
+    }
+    /* PJESA PATOLOGJIKE
+    ------------------------ */
+    .pjesa_patologjike {
+        display: block;
+        width: 86%;
+        margin-bottom: 80px;
+        margin-top: 100px;
+        position: relative;
+        bottom: 90px;
+    }
+    .pjesa_patologjike img:first-of-type {
+        left: 10px;
+    }
+    .pjesa_patologjike img:last-of-type {
+        left: 0;
+        height: 231px;
+    }
+    .text_patologjike {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .text_patologjike h2 {
+        font-size: 26px;
+        padding-right: 0px;
+    }
+    /* METODAT LABORATORIKE
+    ---------------------------- */
+    .metodat_laboratorike {
+        display: block;
+        position: relative;
+        bottom: 80px;
+    }
+    .metodat_laboratorike .metodat_majtas {
+        width: 100%;
+        text-align: center;
+    }
+    .metodat_text div {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+    .metodat_text h2 {
+        font-size: 26px;
+    }
+    .metodat_text p {
+        padding-right: 0;
+    }
+    .metodat_text img {
+        display: none;
+    }
+    .metodat_text a button {
+        position: relative;
+        left: 0;
+        width: 85%;
+        height: 60px;
+        top: 28px;
+        z-index: 1;
+    }
+    .metodat_djathtas img:first-of-type {
+        display: none;
+    }
+    .dna_mobile {
+        display: block;
+        position: relative;
+        bottom: 165px;
+    }
+    /* PJESA E STAFIT 
+    ---------------------- */
+    .pjesa_stafit {
+        width: 100%;
+        margin: 0 auto;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        position: relative;
+        bottom: 100px;
+    }
+    .pjesa_stafit .text_stafit {
+        padding: 0;
+        margin: 30px 25px;
+        -webkit-box-ordinal-group: 2;
+        width: 86%;
+    }
+    .text_stafit h2 {
+        width: 100%;
+        padding-right: 0;
+    }
+    .text_stafit p {
+        padding-right: 0;
+    }
+    .foto_stafit {
+        margin-top: 80px;
+        -webkit-box-ordinal-group: 1;
+    }
+    .foto_stafit img:first-of-type {
+        left: 25px;
+        width: 86%;
+        margin: 0 auto;
+    }
+    .foto_stafit div {
+        width: 50%;
+        height: 31%;
+        top: 111px;
+    }
+    /* APLIKACIONET SOFTUERIKE 
+    ----------------------------- */
+    .aplikacionet_softuerike {
+        margin: 40px 0 100px 20px;
+        width: 94%;
+        display: block;
+        position: relative;
+        bottom: 30px;
+    }
+    .aplikacionet_softuerike .foto_softuerike {
+        width: 94%;
+        margin-right: 0;
+    }
+    .foto_softuerike img {
+        left: 0;
+    }
+    .aplikacionet_softuerike .text_softuerike {
+        width: 88%;
+    }
+    .text_softuerike h2 {
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .text_softuerike p {
+        padding-right: 0;
+        margin: 25px 0;
+    }
+    /* FOOTER
+    ------------------- */
+    footer {
+        padding-top: 10px;
+        height: 320px;
+    }
+    .kontakt_shtese {
+        display: block;
+        width: 92%;
+        position: relative;
+        text-align: center;
+        padding: 50px 20px;
+        font-size: 18px;
+        top: 5px;
+    }
+    .col_kontakt {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 19px;
+    }
+    .col_kontakt.telefon {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        padding: 30px 0px;
+        border-top: 1px solid #0063a0;
+        border-bottom: 1px solid #0063a0;
+        margin: 30px 0;
+        font-size: 25px;
+        border-left: none;
+        border-right: none;
+    }
+    .col_kontakt.adresa {
+        width: 99%;
+        padding: 0 30px;
+        font-size: 25px;
+    }
+    .footer {
+        display: block;
+        width: 100%;
+    }
+    .footer .col-25:first-of-type {
+        width: 50%;
+        padding-left: 25px;
+    }
+    .col-25.fillimi__ {
+        display: none;
+    }
+    .col-25.stafi__ {
+        display: none;
+    }
+    .col-25.downloud_app {
+        display: none;
+    }
+    .footer .col-25 {
+        width: 100%;
+    }
+    .footer_copy {
+        text-align: center;
+    }
+    .footer_copy .copy_rights {
+        width: 97%;
+    }
+    .footer_copy .copy_rights h6 {
+        width: 100%;
+        font-size: 14px;
+        position: relative;
+        left: 83px;
+    }
+    .footer_copy a {
+        position: relative;
+        bottom: 150px;
+        width: 106px;
+        right: 11px;
+        margin-left: 24px;
+    }
+}

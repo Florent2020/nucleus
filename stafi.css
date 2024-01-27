@@ -1,0 +1,155 @@
+/* PERSONEL TITLE
+---------------------- */
+
+.personel_title {
+    padding: 70px 70px 91px;
+    text-align: center;
+    background: linear-gradient(to bottom, #b5eaff, #ebfaff);
+    position: relative;
+    z-index: -2;
+}
+
+.personel_title h1 {
+    color: #005081;
+    font-weight: 600;
+    z-index: 0;
+    font-size: 40px;
+}
+
+.personel_title img {
+    width: 43%;
+    position: absolute;
+    top: -130px;
+    left: 466px;
+    z-index: -1;
+}
+
+
+/* PERSONEL
+------------------ */
+
+.personel {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.personel .row {
+    display: flex;
+    background-color: #fff;
+    padding: 61.75px 50px 0;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 41px;
+}
+
+.personel .row:last-child .card {
+    width: 370.45px;
+}
+
+.personel .card {
+    margin-right: 5%;
+    float: left;
+    background: #0063a0;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.personel .card:nth-child(3) {
+    margin-right: 0;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .name {
+    padding: 20px;
+}
+
+.card p {
+    color: #d5f3ff;
+}
+
+.name p:first-of-type {
+    color: #fff;
+}
+
+hr {
+    border: none;
+    width: 65px;
+    height: 2px;
+    background: #2da3ce;
+    margin: 15px 0;
+}
+
+@media only screen and (max-width: 450px) {
+    .personel_title {
+        margin-bottom: 0;
+    }
+    .personel_title img {
+        top: 4px;
+        opacity: 0.6;
+        left: 52px;
+        width: 70%;
+    }
+    .personel_title h1 {
+        padding: 30px 0;
+        font-size: 28px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 850px) {
+    .personel_title h1 {
+        padding: 30px;
+        font-size: 40px;
+    }
+    .personel_title img {
+        left: 144px;
+        width: 62%;
+        position: absolute;
+        top: 7px;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    /* PERSONEL TITLE
+---------------------- */
+    .personel_title {
+        width: 100%;
+        padding: 45px 20px 80px;
+        font-size: 13px;
+        margin-bottom: 43px;
+    }
+    /* PERSONEL
+------------------ */
+    .personel {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        padding: 0 15px;
+        position: relative;
+        top: -50px;
+    }
+    .personel .row {
+        display: block;
+        padding: 0 15px;
+        z-index: -1;
+        overflow: hidden;
+        bottom: 56px;
+    }
+    .personel .row:last-child .card {
+        width: 100%;
+    }
+    .card {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+}
